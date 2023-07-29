@@ -5,7 +5,7 @@ from wineQuality import logger
 
 
 
-Stage_name = "Data_Ingestion"
+STAGE_NAME = "Data_Ingestion"
 
 class DataIngestionPipeline:
     def __init__(self):
@@ -22,10 +22,10 @@ class DataIngestionPipeline:
 if __name__ == '__main__':
 
     try:
-        logger.info(f">>>>>>>> Starting Stage {Stage_name}<<<<<<<< ")
+        logger.info(f">>>>>>>> Starting Stage {STAGE_NAME}<<<<<<<< ")
         obj = DataIngestionPipeline()
         obj.main()
-        logger.info(f">>>>>>>> completed Stage {Stage_name} <<<<<<<< \n\nx======================x")
+        logger.info(f">>>>>>>> completed Stage {STAGE_NAME} <<<<<<<< \n\nx======================x")
     except Exception as e:
         logger.exception(e)
         raise (e)
