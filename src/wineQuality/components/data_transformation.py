@@ -15,7 +15,7 @@ class DataTransformation:
 
 
     def train_test_spliting(self):
-        data = pd.read_csv(self.config.data_path)
+        data = pd.read_csv(self.config.data_path , index_col=0)
 
         # Split the data into training and test sets. (0.75, 0.25) split.
         train, test = train_test_split(data)

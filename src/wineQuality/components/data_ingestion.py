@@ -17,7 +17,7 @@ class DataIngestion:
         if not os.path.exists(self.config.local_csv_file_path)  :
 
             data = get_data_from_mongodb()
-            data.to_csv(self.config.local_csv_file_path)
+            data.to_csv(self.config.local_csv_file_path , index=False)
             
             logger.info(f"data has been downloaded from MongoDB {len(data)}")
         else:  
