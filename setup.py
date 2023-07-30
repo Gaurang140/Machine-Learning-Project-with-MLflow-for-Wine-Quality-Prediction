@@ -1,6 +1,6 @@
 import setuptools  as st
 
-with open("README.md" , "r" , encoding="utf-8") as f:
+with open("description.txt" , "r" , encoding="utf-8") as f:
     l_discription = f.read()
 
 

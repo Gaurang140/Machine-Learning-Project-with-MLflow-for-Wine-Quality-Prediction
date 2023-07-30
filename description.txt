@@ -19,7 +19,6 @@
 # Azure CICD deployment
 ## save pass
 XUAztbIBEiAWgqLzzD/mJNNNJ7dGQ7hPbo/feR8iw3+ACRAPv68B
-
 ## run from the terminal :
 
 docker build -t mlflowapp.azurecr.io/mlflow:latest .
