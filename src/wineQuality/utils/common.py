@@ -197,6 +197,6 @@ def get_data_from_mongodb() -> pd.DataFrame:
             df.drop('_id', axis=1, inplace=True)
         return df
     except Exception as e:
-        print(f"Error while retrieving data from MongoDB: {e}")
+        raise Exception(f"Error while retrieving data from MongoDB: {e}")
     finally:
         client.close()
